@@ -16,7 +16,7 @@
     <section id="mainPage">
         <div class="image-container">
             <div class="inner-container animated fadeIn slower ">
-                <div class="text ">
+                <div class="text">
                     <h1 class=>Welcome to Meditera</h1>
                     <p>Be kind to your mind. Take a moment to breathe.</p>
                 </div>
@@ -30,7 +30,7 @@
         <div class="image-container">
             <div class="inner-container-text animated fadeIn slower ">
                 <div class="input-text">
-                    <input type="text" id="userName" placeholder="Please, enter your name" required>
+                    <input type="text" id="userName" placeholder="Please, enter your name." required>
                     <button type="submit" class="btn-submit"> Send </button>
                 </div>
                 <div class="pop-up">
@@ -56,25 +56,39 @@
         </div>
     </section>
     <section id="sounds">
-        <div class="image-container">
-            <div class="inner-container-name animated fadeIn slower ">
-                <div class="btn-play">
 
+        <div class="image-container">
+            <header>
+                <div class="logo">
+                    <a href="index.html">Meditera</a>
+                </div>
+            </header>
+            <div class="inner-container-name animated fadeIn slower ">
+                <div class="message">
+                    <h1>Take a deep breathe.</h1>
+                    <p>Choose your meditation sound.</p>
+                </div>
+                <div class="btn-play">
                     <div class='btn-container'>
-                        <div class="play-btn"></div>
+                        <div class="play-btn">
+                            <audio class="song">
+                                <source src="./sounds/rain.mp3">
+                            </audio>
+                        </div>
                     </div>
                     <!--    <a href="#sounds" title="Play video" class="play"></a> -->
 
                 </div>
-                <div class="button-container">
-                    <div class="btn-2minutes">
-                        <button>2 minutes</button>
+                <div class="sound-picker">
+                    <div class="btn-sun">
+                        <button data-sound="./sounds/beach.mp3">
+                            <i class="fas fa-umbrella-beach"></i>
+                        </button>
                     </div>
-                    <div class="btn-5minutes">
-                        <button>5 minutes</button>
-                    </div>
-                    <div class="btn-10minutes">
-                        <button>10 minutes</button>
+                    <div class="btn-rain">
+                        <button data-sound="./sounds/rain.mp3">
+                            <i class="fas fa-cloud-rain"></i>
+                        </button>
                     </div>
 
                 </div>
