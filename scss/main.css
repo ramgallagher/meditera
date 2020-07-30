@@ -74,6 +74,10 @@
   font-family: 'Maven Pro', sans-serif;
 }
 
+.message {
+  margin-top: 8em;
+}
+
 .message h1 {
   font-family: 'IBM Plex Sans', sans-serif;
   color: #5a5555;
@@ -221,22 +225,28 @@
 
 .btn-sun button,
 .btn-rain button {
-  background: #f2f6f5;
-  border: none;
-  width: 80px;
-  text-align: center;
-  border-radius: 15px;
+  background: #f2f6f50c;
+  border: 1.5px solid #f2f2f2;
+  width: 60px;
+  height: 60px;
   padding: 1em;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1em;
-  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   margin: 1em 2em;
+  border-radius: 50%;
 }
 
 .btn-sun button:hover,
 .btn-rain button:hover {
-  background-color: #fafafad5;
+  background: rgba(25, 25, 25, 0.555);
   -webkit-transition: ease-in-out 0.4s;
   transition: ease-in-out 0.4s;
 }
@@ -250,8 +260,9 @@
 
 .btn-sun button i,
 .btn-rain button i {
-  font-size: 18px;
-  color: #63707e;
+  text-align: center;
+  font-size: 22px;
+  color: #f2f2f2;
 }
 
 .btn-pause {
@@ -259,10 +270,8 @@
 }
 
 .btn-container {
-  background: #63707e;
+  background: rgba(25, 25, 25, 0.274);
   border-radius: 2pc;
-  -webkit-box-shadow: 3px 2px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 3px 2px 0 rgba(0, 0, 0, 0.4);
   width: 120px;
   height: 90px;
   padding: 30px;
@@ -272,7 +281,31 @@
 }
 
 .btn-container:hover {
-  background: rgba(25, 25, 25, 0.555);
+  background: #32343699;
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
+}
+
+.go-back {
+  margin-top: 1em;
+}
+
+.go-back button {
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: rgba(25, 25, 25, 0.274);
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.go-back button:hover {
+  background: #32343699;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
 }
 
 .play-btn {
